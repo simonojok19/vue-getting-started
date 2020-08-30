@@ -3,11 +3,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a
-            href="https://github.com/johnpapa/vue-getting-started"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a v-bind:href="github" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github fa-2x" aria-hidden="true"></i>
           </a>
           <a
@@ -22,3 +18,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'HeaderBarLinks',
+  data() {
+    return {
+      github: 'https://github.com/johnpapa/vue-getting-started',
+    };
+  },
+};
+</script>
