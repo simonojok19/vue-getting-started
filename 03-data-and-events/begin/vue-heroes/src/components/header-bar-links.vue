@@ -6,11 +6,7 @@
           <a v-bind:href="github" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github fa-2x" aria-hidden="true"></i>
           </a>
-          <a
-            href="https://twitter.com/john_papa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a v-bind:href="twitter" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
           </a>
         </div>
@@ -25,6 +21,7 @@ export default {
   data() {
     return {
       github: 'https://github.com/johnpapa/vue-getting-started',
+      twitter: 'https://twitter.com/john_papa',
     };
   },
 };

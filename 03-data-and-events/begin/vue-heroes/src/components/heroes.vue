@@ -7,7 +7,7 @@
       <div class="column is-8">
         <div class="card edit-detail">
           <header class="card-header">
-            <p class="card-header-title"></p>
+            <p class="card-header-title">{{ hero.firstName }}</p>
           </header>
           <div class="card-content">
             <div class="content">
@@ -85,5 +85,19 @@
 <script>
 export default {
   name: 'Heroes',
+  data() {
+    return {
+      hero: {
+        id: 20,
+        firstName: 'Madelyn',
+        lastname: 'Papa',
+        description: 'the cat whisperer',
+        capeColor: '',
+        power: '',
+        active: true,
+      },
+      message: '',
+    };
+  },
 };
 </script>
